@@ -10,3 +10,19 @@ dialog::backdrop {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+.buttonBlock {
+  margin: 8px;
+}
+
+.toastContainer {
+  z-index: 100000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8px;
+}
+
+.myToast {
+  background-color: white;
+}

@@ -1,9 +1,6 @@
 function openModal() {
   let dialog = document.querySelector('.myModal')
-  console.log('dialog', dialog, 'test')
-  console.log('opening dialog as modal')
   dialog.showModal()
-  console.log('modal open')
 }
 
 function closeModal() {
@@ -12,5 +9,11 @@ function closeModal() {
 }
 
 function showToast () {
-  $('.myToast').toast('show')
+  let toast = document.querySelector('.myToast')
+  toast.classList.remove('invisible')
+}
+
+function closeToast () {
+  let toast = document.querySelector('.myToast')
+  toast.classList.add('invisible')
 }
