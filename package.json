@@ -1,0 +1,15 @@
+{
+  "name": "layers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p "
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dialog-polyfill": "^0.4.10",
+    "http-server": "^0.11.1"
+  }
+}

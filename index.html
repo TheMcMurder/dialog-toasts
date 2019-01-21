@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src='./index.js'></script>
+    <link rel="stylesheet" href='./main.css'>
+  </head>
+  <body>
+    <button onclick='openModal()'>Trigger Modal</button>
+    <button onclick="showToast()">Toast</button>
+    <dialog class="myModal">
+      <p>This layer is guaranteed to be on top of any other elements regardless of their <code>z-index</code> value, including previously opened modal dialogs.</p>
+      <p>You can optionally close the modal dialog using the "escape" key!</p>
+      <button onclick="closeModal()">Close</button>
+      <button onclick="showToast()">Toast</button>
+    </dialog>
+    <div class="myToast toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay='8000'>
+    <div class="toast-header">
+      <img src="..." class="rounded mr-2" alt="...">
+      <strong class="mr-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+    </div>
+  </body>
+</html>
