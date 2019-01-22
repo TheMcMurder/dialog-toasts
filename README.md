@@ -1,6 +1,6 @@
 # dialog-toasts
 
-Some experimenting with the native <dialog> element and toasts
+Some experimenting with the native `<dialog>` element and toasts
  
 ## Installation
 npm i
